@@ -9,16 +9,12 @@ function Nav() {
         color:'white'
     };
 
-    const logout = ()=>{
-        localStorage.removeItem("authkey");
-        document.location.href="/";
-      }
-
     return (
         <nav>
             <ul className="nav-links">
-                <Link style={navStyle} to="/utterence"> Utterence</Link> 
-                <Link style={navStyle} to="/conversation"> Conversation </Link>
+                <Link style={navStyle} to="/uploadutterence"> Upload Utterence</Link> 
+                <Link style={navStyle} to="/recordutterence"> Record Utterence </Link>
+                <Link style={navStyle} to="/uploadconversation"> Upload Conversation </Link>
             </ul>
         </nav>
     )

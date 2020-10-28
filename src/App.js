@@ -1,7 +1,9 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Nav from './Nav';
-import Utterence from './Utterence';
+import UploadUtterence from './UploadUtterence';
+import RecordUtterence from './RecordUtterence';
+import UploadConversation from './UploadConversation';
 
 function App() {
 
@@ -11,8 +13,9 @@ function App() {
        <Router>
             <Nav/>
               <Switch>
-                <Route path="/utterence" component={Utterence}/>
-                <Route path="/conversation"/>
+                <Route path="/uploadutterence" component={UploadUtterence}/>
+                <Route path="/recordutterence" component={RecordUtterence}/>
+                <Route path="/uploadconversation" component={UploadConversation}/>
               </Switch>
         </Router>
     </div>
